@@ -16,8 +16,6 @@
   - node: assembly
     entity: AirlockShuttleAssembly
     actions:
-#    - !type:SpriteStateChange
-#      state: assembly # TODO Need assembly sprite
     - !type:SnapToGrid {}
     - !type:SetAnchor {}
     edges:
@@ -155,7 +153,7 @@
       conditions:
       - !type:EntityAnchored {}
       - !type:DoorWelded {}
-      - !type:AirlockBolted
+      - !type:DoorBolted
         value: false
       - !type:WirePanel {}
       steps:
@@ -187,7 +185,7 @@
         conditions:
           - !type:EntityAnchored {}
           - !type:DoorWelded {}
-          - !type:AirlockBolted
+          - !type:DoorBolted
             value: false
           - !type:WirePanel {}
         steps:
