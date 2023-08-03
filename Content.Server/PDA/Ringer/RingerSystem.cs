@@ -120,6 +120,8 @@ namespace Content.Server.PDA.Ringer
             UpdateRingerRingtone(uid, ringer, GenerateRingtone());
         }
 
+        //Non Event Functions
+
         public void RandomizeUplinkCode(EntityUid uid, RingerUplinkComponent uplink, ComponentInit args)
         {
             var notes = new[]
@@ -147,8 +149,6 @@ namespace Content.Server.PDA.Ringer
 
             uplink.Code = ringtone;
         }
-
-        //Non Event Functions
 
         private Note[] GenerateRingtone()
         {
