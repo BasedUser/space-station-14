@@ -572,7 +572,7 @@
         - !type:CureZombieInfection
           conditions:
             - !type:ReagentThreshold
-              min: 10
+              min: 9.4 # -0.6 due to 0.5 metabolism and 0.1 safety margin
 
 - type: reagent
   id: AmbuzolPlus
@@ -589,7 +589,7 @@
           innoculate: true
           conditions:
             - !type:ReagentThreshold
-              min: 5
+              min: 4.4 # -0.6 due to 0.5 metabolism and 0.1 safety margin
 
 - type: reagent
   id: PulpedBananaPeel
